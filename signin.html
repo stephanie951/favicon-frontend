@@ -6,40 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="script.js"></script>
+    <script defer src="signin.js"></script>
 </head>
 
 <body>
-    <!-- left portion of the screen -->
+    <!-- right portion of the screen -->
     <div class="container1">
-        <div class="logo">
-            <img src="Group 26.svg" alt="" width="110px" height="49px">
-        </div>
 
-        <div class="signin">
-            <img class="emoji" src="image 3.png" alt="" width="165px" height="110px">
-            <h2>Welcome Back !</h2>
-            <p>Login to gain access to your favourite icons</p>
-            <a href="signin.html"> <button>Sign In</button></a>
+        <div class="signup">
+            <img class="emoji" src="Sign in emoji1.svg" alt="" width="165px" height="110px">
+            <h2>Hello Friend !</h2>
+            <p>Register and get your journey started with us.</p>
+            <a href="index.html"><button>Sign Up</button></a>
         </div>
     </div>
-    <!-- right portion -->
+    <!-- left portion -->
     <div class="container2">
-        <img src="Frame 115.svg" alt="" class="blue">
-        <div class="create">
-            <h2>Create Account</h2>
-            <p class="getstarted">Lets get you started.</p>
+        <div class="logo">
+            <img src="Frame 115.svg" alt="" width="110pxpx" height="49px">
+        </div>
+        <div class="login">
+            <h2>Log in to Account</h2>
+            <p class="welcome">Welcome back.</p>
             <form id="form" class="form">
                 <div class="form-control">
-                    <input type="text" placeholder="Name" id="username" onkeyup="validateName()" />
-                    <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-                <div class="form-control">
-                    <input type="email" placeholder="Email" id="email" onkeyup="validateEmail()" />
+                    <input type="text" class="name" placeholder="Name" id="username" onkeyup="validateName()" />
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <small>Error message</small>
@@ -50,16 +43,21 @@
                     <i class="fa fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-                <button>Sign Up</button>
-                <div class="signin_transfer">
-                    <span>You already have an account?</span><a href="signin.html"> Login</a>
+                <div class="forgot_pass">
+                    <div class="form_radio">
+                        <input type="radio"><label>Remember me</label>
+                    </div>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <button>Sign In</button>
+                <div class="signup_transfer">
+                    <span>Don't have an account?</span><a href="index.html"> Sign up</a>
                 </div>
                 <p class="or_cont">Or continue with</p>
                 <div class="google_content">
                     <img src="image 1.svg" alt="">
                     <p class="goo">Google</p>
                 </div>
-
             </form>
         </div>
     </div>
